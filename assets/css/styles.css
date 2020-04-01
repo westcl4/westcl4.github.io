@@ -1,14 +1,46 @@
-body{
+body
+{
     background-color: slategray;
+    background-image: url("assets/img/header.jpg");
 }
 
-img{
-    border: 2px solid #000000;
+.avatar 
+{
+
+vertical-align: middle;
+width: 100px;
+height: 100px;
+border-radius: 50%;
+border: 1px solid #000000;
     border-radius: 50%;
 }
-.avatar {
-vertical-align: middle;
-width: 50px;
-height: 50px;
-border-radius: 50%;
+
+.bannerimage
+{
+    background-image:url("../img/header.jpg");
+    background-repeat: no-repeat ;
+    height: 500px;
+    vertical-align: middle;
+    width: 100%;
+    background-size: cover;
 }
+.backgroundImage
+{
+    
+}
+
+
+.profilebar
+{
+
+}
+
+.navbar
+{
+    
+}
+
+ .albumcover
+ {
+
+ }

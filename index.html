@@ -1,14 +1,73 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="..sitejs.js"></script>
+
+        <style>
+            nav
+            {
+               background-color: black;               
+            }  
+            nav ul
+            {
+                display: flex;
+                padding:0;
+            }
+            li
+            {
+                display: flex;               
+            }  
+            li a
+            {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;                
+            }
+            
+            li a:not(:last-child){border-right: 1px solid gray;}            
+            li:first-child a:last-child{border-right: 1px solid gray;} 
+            /* pseudo-selector*/
+            .rightalign
+            {
+                margin-left: auto;
+            }
+            
+            
+        </style>
+
         <title>Static last.fm</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/styles.css"
+
+
+
+        <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+        
         
     </head>
     
     <body>
-        <img class = "avatar" alt = "avatar"  src="assets/img/profilePic.jpg"/>
+        <div class = "bannerimage">
+            <img src = "assets/img/avatar.png" class = "avatar" alt = "Avatar"/>
+        </div>
+        <nav>
+            <ul>   
+            
+                <li>
+                    <a href = "artists.html">Artists</a>
+                    <a href = "artists.html">Artists</a>
+                    <a href = "artists.html">Artists</a>
+                    <a href = "artists.html">Artists</a>
+                </li>
+                <!---->
+                <li class="rightalign">
+                    <a href="contact.html">Contact</a>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
         
+        <!--Add profile bar HTML here-->
     </body>
         
 </html>
