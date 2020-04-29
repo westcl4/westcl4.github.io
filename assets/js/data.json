@@ -1,0 +1,32 @@
+{  "Data":[
+
+    {"Artists":[
+
+        
+        {"Artist":"The Upbeats","img":"assets/img/artists/the-upbeats.jpg","Scrobles":210},
+        {"Artist":"Netsky","img":"assets/img/artists/netsky.png","Scrobles":330},
+        {"Artist":"Culture Shock","img":"assets/img/artists/culture-shock.jpg","Scrobles":490},
+        {"Artist":"Hybrid Minds","img":"assets/img/artists/hybrid-minds.jpg","Scrobles":420},
+        {"Artist":"Delta Heavy","img":"assets/img/artists/delta-heavy.jpg","Scrobles":550},
+        {"Artist":"Wilkinson","img":"assets/img/artists/wilkinson.png","Scrobles":480},
+        {"Artist":"Fred V and Grafix","img":"assets/img/artists/fred-v-grafix.jpg","Scrobles":450},
+        {"Artist":"Dimension","img":"assets/img/artists/dimension.jpg","Scrobles":570}
+        
+
+
+    ]},
+
+    {"Songs":[
+        {"Artist":"Dimension","Song":"Devotion"},
+        {"Artist":"Netsky","Song":"Everyday"},
+        {"Artist":"Culture Shock", "Song":"Panic Room"},
+        {"Artist":"Fred V and Grafix", "Song":"Ultraviolet"},
+        {"Artist":"Hybrid Minds", "Song":"Touch"},
+        {"Artist":"Hybrid Minds", "Song":"Phoenix"},
+        {"Artist":"The Upbeats", "Song":"Uncharted"},
+        {"Artist": "Delta Heavy", "Song":"White Flag"},
+        {"Artist":"Wilkinson", "Song":"Afterglow"}
+
+    ]}
+
+    ]}

@@ -11,8 +11,9 @@ vertical-align: middle;
 width: 100px;
 height: 100px;
 border-radius: 50%;
-border: 1px solid #000000;
-    border-radius: 50%;
+border: 2px black;
+border-radius: 50%;
+float: left;
 }
 
 .bannerimage
@@ -23,24 +24,34 @@ border: 1px solid #000000;
     vertical-align: middle;
     width: 100%;
     background-size: cover;
+    position: relative;
 }
 .backgroundImage
 {
-    
+
 }
-
-
-.profilebar
+.countryFlag
 {
-
+    width: 35px;
 }
 
-.navbar
+.profileBar
 {
-    
+    background-color: rgb(31, 34, 36);
+    width: 25%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+.flex-container
+{
+    display: flex;
+
 }
 
- .albumcover
+
+ .top-tracks-title
  {
-
+    text-align: center;
+    
  }
