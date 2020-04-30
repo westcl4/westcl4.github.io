@@ -1,17 +1,22 @@
 fetch("assets/js/data.json")
-.then(response => { return response.json()})
-.then(data =>{
-    let music = data["data"]
-    let artists = document.getElementsByClassName
 
-})
 
-function topTenTracks(data){
-    if (typeof(data) == 'object') {
-        document.write('ol');
 
-        for (var i in data){
-            
-        }
+.then(res => { 
+    return res.json();
+    })
+.then(data => {
+    console.log(data);
+    });
+
+    for (let i= 0; i < Artists.length; i++) 
+    {
+       // Artists[i].src=
+        
     }
-}
+
+    for (let i= 0; i < Songs.length; i++) 
+    {
+       // Artists[i].src=
+        
+    }

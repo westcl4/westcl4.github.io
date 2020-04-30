@@ -18,14 +18,29 @@
 
     {"Songs":[
         {"Artist":"Dimension","Song":"Devotion"},
+        {"Artist":"Dimension","Song":"If You Want To"},
+        {"Artist":"Dimension","Song":"Techno"},
         {"Artist":"Netsky","Song":"Everyday"},
+        {"Artist":"Netsky","Song":"Rio"},
+        {"Artist":"Netsky","Song":"Forget What You Look Like"},
         {"Artist":"Culture Shock", "Song":"Panic Room"},
+        {"Artist":"Culture Shock", "Song":"Renaissance"},
+        {"Artist":"Culture Shock", "Song":"Bunker"},
         {"Artist":"Fred V and Grafix", "Song":"Ultraviolet"},
+        {"Artist":"Fred V and Grafix", "Song":"Altitude"},
+        {"Artist":"Fred V and Grafix", "Song":"Auckland Sunrise"},
         {"Artist":"Hybrid Minds", "Song":"Touch"},
         {"Artist":"Hybrid Minds", "Song":"Phoenix"},
+        {"Artist":"Hybrid Minds", "Song":"Solitude"},
         {"Artist":"The Upbeats", "Song":"Uncharted"},
+        {"Artist":"The Upbeats", "Song":"Big Skeleton"},
+        {"Artist":"The Upbeats", "Song":"Say Go"},
         {"Artist": "Delta Heavy", "Song":"White Flag"},
-        {"Artist":"Wilkinson", "Song":"Afterglow"}
+        {"Artist": "Delta Heavy", "Song":"Kaliedoscope"},
+        {"Artist": "Delta Heavy", "Song":"Ghost"},
+        {"Artist":"Wilkinson", "Song":"Afterglow"},
+        {"Artist":"Wilkinson", "Song":"Decompression"},
+        {"Artist":"Wilkinson", "Song":"Take You Higher"}
 
     ]}
 
