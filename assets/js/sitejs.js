@@ -1,3 +1,8 @@
+/*(function(){
+var ul = document.createElement('ul');
+    ul.setAttribute('id','top10');
+        
+    document.getElementById('renderList').appendChild(ul);
 
  
 fetch("../assets/js/artists.json")
@@ -24,7 +29,7 @@ fetch("../assets/js/songs.json")
     .then(songdata => {
         console.log(songdata["Songs"])
     })
-    
+})
    
 
     /*data ["img"][0].forEach(Img =>{

@@ -2,6 +2,28 @@ body
 {
     background-color: slategray;
     background-image: url("assets/img/header.jpg");
+    color: white;
+}
+
+.recentlyPlayed{
+    display: inline-block;
+}
+
+
+.recent-img{
+    display: inline-block
+}
+
+.recent-song{
+    display: inline-block
+}
+
+.recent-artist{
+    display: inline-block
+}
+
+.recent-last-scr{
+    display: inline-block
 }
 
 .avatar 

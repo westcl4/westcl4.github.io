@@ -1,92 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <script type = "text/javascript" src="assets/js/sitejs.js"></script>
-        <!--script type = "text/javascript" src="assets/js/data.json"></script/-->
 
-        <style>
-            nav
-            {
-               background-color: black;               
-            }  
-            nav ul
-            {
-                display: flex;
-                padding:0;
-            }
-            li
-            {
-                display: flex;               
-            }  
-            li a
-            {
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;                
-            }
-            
-            li a:not(:last-child){border-right: 1px solid gray;}            
-            li:first-child a:last-child{border-right: 1px solid gray;} 
-            /* pseudo-selector*/
-            .rightalign
-            {
-                margin-left: auto;
-            }
-            
-            
-        </style>
+<head>
+    <script type="text/javascript" src="assets/js/sitejs.js"></script>
+    <!--script type = "text/javascript" src="assets/js/data.json"></script/-->
+
+    <style>
+        nav {
+            background-color: black;
+        }
+
+        nav ul {
+            display: flex;
+            padding: 0;
+        }
+
+        li {
+            display: flex;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:not(:last-child) {
+            border-right: 1px solid gray;
+        }
+
+        li:first-child a:last-child {
+            border-right: 1px solid gray;
+        }
+
+        /* pseudo-selector*/
+        .rightalign {
+            margin-left: auto;
+        }
+    </style>
 
 
+
+
+    <title>Static last.fm</title>
+
+
+
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+
+</head>
+
+<body>
+    <div class="bannerimage">
+        <div class="profileBar">
+            <img src="assets/img/profilePic.jpg" class="avatar" alt="Avatar" />
+            <h2 style="color: white">Conor West </h2>
+            <img src="assets/img/flag-round-250.png" class="countryFlag" />
+
+        </div>
+    </div>
+    <nav>
+        <ul>
+
+            <li>
+                <a href="artists.html">Artists</a>
+                <a href="artists.html">Artists</a>
+                <a href="artists.html">Artists</a>
+                <a href="artists.html">Artists</a>
+            </li>
+            <!---->
+            <li class="rightalign">
+                <a href="contact.html">Contact</a>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <h1 class="top-tracks-title">Conor's Top Tracks</h1>
+
+    <div id = "recentlyPlayed">
+        <div class = "recent-img" id = "recent-img"></div>
+        <div class = "recent-song" id = "recent-song"></div>
+        <div class= "recent-artist" id = "recent-artist"></div>
+        <div class="recent-last-scr" id = "recent-last-scr"></div>
+    </div>
+   
+
+
+</body>
+
+<script type="text/javascript">
+
+//This script fetches and populates the recent songs list
+
+fetch("../assets/js/recentSongs.json")
+.then(function(response){
+    return response.json();
+})
+.then(function(data){
+    appendData(data);
+})
+.catch(function(err){
+    console.log('err: ' + err);
+});
+
+
+
+
+    function appendData(data){
         
-        <title>Static last.fm</title>
+        var imgContainer = document.getElementById("recent-img");
+        var artistContainer = document.getElementById("recent-artist");
+        var songContainer = document.getElementById("recent-song");
+        var scrContainer = document.getElementById("recent-last-scr");
+         
+        for (var i =0; i < data.length; i++) {
+           
+           var li = document.createElement("li");
+           li.innerHTML = data[i].img;
+           imgContainer.appendChild(li);
+          
+           
+       }
 
+        for (var i =0; i < data.length; i++) {
+           
+            var li = document.createElement("li");
+            li.innerHTML = data[i].Artist;
+            artistContainer.appendChild(li);
+           
+            
+        }
 
+        for (var i =0; i < data.length; i++) {
+           
+            var li = document.createElement("li");
+            li.innerHTML = data[i].Song;
+            songContainer.appendChild(li);
+           
+            
+        }
 
-        <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+        for (var i =0; i < data.length; i++) {
+           
+           var li = document.createElement("li");
+           li.innerHTML = data[i].lastScrobble;
+           scrContainer.appendChild(li);
+          
+           
+       }
         
-        
-    </head>
+    }
+
+
+
+
+/*fetch("../assets/js/recentSongs.json")
+.then(response => response.json())
+.then(data=> console.log(data))
+
+function recentSongsList(json) {
+    var songArray = JSON.parse(data);
     
-    <body>
-        <div class = "bannerimage">
-            <div class = "profileBar">
-                <img src = "assets/img/profilePic.jpg" class = "avatar" alt = "Avatar"/>
-                <h2 style = "color: white">Conor West </h2>
-                <img src = "assets/img/flag-round-250.png" class="countryFlag" />
-                
-            </div>
-        </div>
-        <nav>
-            <ul>   
-            
-                <li>
-                    <a href = "artists.html">Artists</a>
-                    <a href = "artists.html">Artists</a>
-                    <a href = "artists.html">Artists</a>
-                    <a href = "artists.html">Artists</a>
-                </li>
-                <!---->
-                <li class="rightalign">
-                    <a href="contact.html">Contact</a>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
+
+    for (let i = 0; i < songArray.length; i++) {
+        var v = songArray[i];
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(v.Artist));
+        ul.appendChild(li);
         
+    }
 
-        <h1 class="top-tracks-title">Conor's Top Tracks</h1>
+}
 
-        <ol>
-            <li></li>
-        </ol>
+li.innerHTML = data[i].Song;
+            songContainer.appendChild(li);
+            /*li.innerHTML = data[i].img;
+            mainContainer.appendChild(li);
+            li.innerHTML = data[i].lastScrobble;
+            mainContainer.appendChild(li); */
 
-        <div class="flex-container">
 
-        </div>
-        
-    </body>
-        
+
+
+</script>
+
 </html>
-
