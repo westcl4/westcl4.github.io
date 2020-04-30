@@ -6,25 +6,47 @@ body
 }
 
 .recentlyPlayed{
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 
 .recent-img{
-    display: inline-block
+    display: inline-flex;
+    
+    padding-top: 15px;
+    padding-right: 15px;
+    align-content: center;
+    height: 100px;
+    width: 100px;
+    flex-direction: row;
 }
 
 .recent-song{
-    display: inline-block
+    display: inline-flex;
+    padding-top: 8px;
+    padding-right: 15px;
+    flex-direction: row;
+
 }
 
 .recent-artist{
-    display: inline-block
+    display: inline-flex;
+    padding-top: 8px;
+    padding-right: 15px;
+    flex-direction: row;
+
 }
 
 .recent-last-scr{
-    display: inline-block
+    display: inline-flex;
+    padding-top: 8px;
+    padding-right: 15px;
+    flex-direction: row;
 }
+
 
 .avatar 
 {

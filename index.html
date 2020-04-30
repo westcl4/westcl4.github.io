@@ -82,7 +82,7 @@
 
     <h1 class="top-tracks-title">Conor's Top Tracks</h1>
 
-    <div id = "recentlyPlayed">
+    <div id = "recentlyPlayed" class="recentlyPlayed">
         <div class = "recent-img" id = "recent-img"></div>
         <div class = "recent-song" id = "recent-song"></div>
         <div class= "recent-artist" id = "recent-artist"></div>
@@ -97,7 +97,7 @@
 
 //This script fetches and populates the recent songs list
 
-fetch("../assets/js/recentSongs.json")
+let data = fetch("../assets/js/recentSongs.json")
 .then(function(response){
     return response.json();
 })
@@ -117,12 +117,17 @@ fetch("../assets/js/recentSongs.json")
         var artistContainer = document.getElementById("recent-artist");
         var songContainer = document.getElementById("recent-song");
         var scrContainer = document.getElementById("recent-last-scr");
-         
-        for (var i =0; i < data.length; i++) {
+        var Images = new Array(data.length); 
+        var height = 100, width = 100;
+
+        for (var i =0; i < Images.length; i++) {
+           Images[i] = new Image();
+           var img = document.createElement("img");
+           img.src = data[i].img;
+           img.height = height;
+           img.width = width;
+           imgContainer.appendChild(img);
            
-           var li = document.createElement("li");
-           li.innerHTML = data[i].img;
-           imgContainer.appendChild(li);
           
            
        }
