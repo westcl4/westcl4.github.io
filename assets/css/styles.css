@@ -7,13 +7,13 @@ body
 .avatar 
 {
 
-vertical-align: middle;
-width: 100px;
-height: 100px;
-border-radius: 50%;
-border: 2px black;
-border-radius: 50%;
-float: left;
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px black;
+    border-radius: 50%;
+    float: left;
 }
 
 .bannerimage
@@ -28,7 +28,7 @@ float: left;
 }
 .backgroundImage
 {
-    
+
 }
 .countryFlag
 {
@@ -46,11 +46,17 @@ float: left;
 .flex-container
 {
     display: flex;
+    flex-direction: column;
 
 }
 
+.flex-container-top-tracks
+{
+    display: flex;
+}
 
- .top-tracks-title
+
+ .top-tracks-title 
  {
     text-align: center;
     color: white;

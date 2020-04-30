@@ -1,47 +1,164 @@
-{  "Data":[
-
-    {"Artists":[
-
-        
-        {"Artist":"The Upbeats","img":"assets/img/artists/the-upbeats.jpg","Scrobles":210},
-        {"Artist":"Netsky","img":"assets/img/artists/netsky.png","Scrobles":330},
-        {"Artist":"Culture Shock","img":"assets/img/artists/culture-shock.jpg","Scrobles":490},
-        {"Artist":"Hybrid Minds","img":"assets/img/artists/hybrid-minds.jpg","Scrobles":420},
-        {"Artist":"Delta Heavy","img":"assets/img/artists/delta-heavy.jpg","Scrobles":550},
-        {"Artist":"Wilkinson","img":"assets/img/artists/wilkinson.png","Scrobles":480},
-        {"Artist":"Fred V and Grafix","img":"assets/img/artists/fred-v-grafix.jpg","Scrobles":450},
-        {"Artist":"Dimension","img":"assets/img/artists/dimension.jpg","Scrobles":570}
-        
-
-
-    ]},
-
-    {"Songs":[
-        {"Artist":"Dimension","Song":"Devotion"},
-        {"Artist":"Dimension","Song":"If You Want To"},
-        {"Artist":"Dimension","Song":"Techno"},
-        {"Artist":"Netsky","Song":"Everyday"},
-        {"Artist":"Netsky","Song":"Rio"},
-        {"Artist":"Netsky","Song":"Forget What You Look Like"},
-        {"Artist":"Culture Shock", "Song":"Panic Room"},
-        {"Artist":"Culture Shock", "Song":"Renaissance"},
-        {"Artist":"Culture Shock", "Song":"Bunker"},
-        {"Artist":"Fred V and Grafix", "Song":"Ultraviolet"},
-        {"Artist":"Fred V and Grafix", "Song":"Altitude"},
-        {"Artist":"Fred V and Grafix", "Song":"Auckland Sunrise"},
-        {"Artist":"Hybrid Minds", "Song":"Touch"},
-        {"Artist":"Hybrid Minds", "Song":"Phoenix"},
-        {"Artist":"Hybrid Minds", "Song":"Solitude"},
-        {"Artist":"The Upbeats", "Song":"Uncharted"},
-        {"Artist":"The Upbeats", "Song":"Big Skeleton"},
-        {"Artist":"The Upbeats", "Song":"Say Go"},
-        {"Artist": "Delta Heavy", "Song":"White Flag"},
-        {"Artist": "Delta Heavy", "Song":"Kaliedoscope"},
-        {"Artist": "Delta Heavy", "Song":"Ghost"},
-        {"Artist":"Wilkinson", "Song":"Afterglow"},
-        {"Artist":"Wilkinson", "Song":"Decompression"},
-        {"Artist":"Wilkinson", "Song":"Take You Higher"}
-
-    ]}
-
-    ]}
+{
+    "Data": [
+        {
+            "Artists": [
+                {
+                    "Artist": "The Upbeats",
+                    "img": "assets/img/artists/the-upbeats.jpg"
+                },
+                {
+                    "Artist": "Netsky",
+                    "img": "assets/img/artists/netsky.png"
+                },
+                {
+                    "Artist": "Culture Shock",
+                    "img": "assets/img/artists/culture-shock.jpg"
+                },
+                {
+                    "Artist": "Hybrid Minds",
+                    "img": "assets/img/artists/hybrid-minds.jpg"
+                },
+                {
+                    "Artist": "Delta Heavy",
+                    "img": "assets/img/artists/delta-heavy.jpg"
+                },
+                {
+                    "Artist": "Wilkinson",
+                    "img": "assets/img/artists/wilkinson.png"
+                },
+                {
+                    "Artist": "Fred V and Grafix",
+                    "img": "assets/img/artists/fred-v-grafix.jpg"
+                },
+                {
+                    "Artist": "Dimension",
+                    "img": "assets/img/artists/dimension.jpg"
+                }
+            ]
+        },
+        {
+            "Songs": [
+                {
+                    "Artist": "Dimension",
+                    "Song": "Devotion",
+                    "Scrobbles": 210
+                },
+                {
+                    "Artist": "Dimension",
+                    "Song": "If You Want To",
+                    "Scrobbles": 330
+                },
+                {
+                    "Artist": "Dimension",
+                    "Song": "Techno",
+                    "Scrobbles": 490
+                },
+                {
+                    "Artist": "Netsky",
+                    "Song": "Everyday",
+                    "Scrobbles": 420
+                },
+                {
+                    "Artist": "Netsky",
+                    "Song": "Rio",
+                    "Scrobbles": 550
+                },
+                {
+                    "Artist": "Netsky",
+                    "Song": "Forget What You Look Like",
+                    "Scrobbles": 480
+                },
+                {
+                    "Artist": "Culture Shock",
+                    "Song": "Panic Room",
+                    "Scrobbles": 450
+                },
+                {
+                    "Artist": "Culture Shock",
+                    "Song": "Renaissance",
+                    "Scrobbles": 570
+                },
+                {
+                    "Artist": "Culture Shock",
+                    "Song": "Bunker",
+                    "Scrobbles": 590
+                },
+                {
+                    "Artist": "Fred V and Grafix",
+                    "Song": "Ultraviolet",
+                    "Scrobbles": 130
+                },
+                {
+                    "Artist": "Fred V and Grafix",
+                    "Song": "Altitude",
+                    "Scrobbles": 330
+                },
+                {
+                    "Artist": "Fred V and Grafix",
+                    "Song": "Auckland Sunrise",
+                    "Scrobbles": 790
+                },
+                {
+                    "Artist": "Hybrid Minds",
+                    "Song": "Touch",
+                    "Scrobbles": 1240
+                },
+                {
+                    "Artist": "Hybrid Minds",
+                    "Song": "Phoenix",
+                    "Scrobbles": 570
+                },
+                {
+                    "Artist": "Hybrid Minds",
+                    "Song": "Solitude",
+                    "Scrobbles": 1580
+                },
+                {
+                    "Artist": "The Upbeats",
+                    "Song": "Uncharted",
+                    "Scrobbles": 1570
+                },
+                {
+                    "Artist": "The Upbeats",
+                    "Song": "Big Skeleton",
+                    "Scrobbles": 1330
+                },
+                {
+                    "Artist": "The Upbeats",
+                    "Song": "Say Go",
+                    "Scrobbles": 1580
+                },
+                {
+                    "Artist": "Delta Heavy",
+                    "Song": "White Flag",
+                    "Scrobbles": 960
+                },
+                {
+                    "Artist": "Delta Heavy",
+                    "Song": "Kaliedoscope",
+                    "Scrobbles": 880
+                },
+                {
+                    "Artist": "Delta Heavy",
+                    "Song": "Ghost",
+                    "Scrobbles": 810
+                },
+                {
+                    "Artist": "Wilkinson",
+                    "Song": "Afterglow",
+                    "Scrobbles": 1110
+                },
+                {
+                    "Artist": "Wilkinson",
+                    "Song": "Decompression",
+                    "Scrobbles": 440
+                },
+                {
+                    "Artist": "Wilkinson",
+                    "Song": "Take You Higher",
+                    "Scrobbles": 210
+                }
+            ]
+        }
+    ]
+}
