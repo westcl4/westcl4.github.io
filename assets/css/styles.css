@@ -5,46 +5,73 @@ body
     color: white;
 }
 
-.recentlyPlayed{
-    display: inline-flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
+.ol{
+    min-height: 100px;
 }
 
+.recentlyPlayed{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+
+    box-sizing: border-box;
+    
+    
+}
+
+.recent-play-table{
+    display: flex;
+    width: 50%;
+    
+}
 
 .recent-img{
-    display: inline-flex;
+    display: flex;
     
     padding-top: 15px;
     padding-right: 15px;
     align-content: center;
-    height: 100px;
-    width: 100px;
-    flex-direction: row;
+    min-height: 800px;
+    
+    flex-direction: column;
+
+    box-sizing: border-box;
+
+    height: 100%;
 }
 
 .recent-song{
-    display: inline-flex;
+    display: flex;
     padding-top: 8px;
     padding-right: 15px;
-    flex-direction: row;
+    flex-direction: column;
+    min-height: 800px;
+    
+    box-sizing: border-box;
 
+    height: 100%;
 }
 
 .recent-artist{
-    display: inline-flex;
+    display: flex;
     padding-top: 8px;
     padding-right: 15px;
-    flex-direction: row;
-
+    flex-direction: column;
+    min-height: 800px;
+    
+    box-sizing: border-box;
 }
 
 .recent-last-scr{
-    display: inline-flex;
+    display: flex;
     padding-top: 8px;
     padding-right: 15px;
-    flex-direction: row;
+    flex-direction: column;
+    min-height: 800px;
+    
+    box-sizing: border-box;
+    
 }
 
 

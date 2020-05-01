@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <script type="text/javascript" src="assets/js/sitejs.js"></script>
+    <!--script type="text/javascript" src="assets/js/sitejs.js"></script-->
     <!--script type = "text/javascript" src="assets/js/data.json"></script/-->
 
     <style>
@@ -82,13 +82,14 @@
 
     <h1 class="top-tracks-title">Conor's Top Tracks</h1>
 
-    <div id = "recentlyPlayed" class="recentlyPlayed">
-        <div class = "recent-img" id = "recent-img"></div>
-        <div class = "recent-song" id = "recent-song"></div>
-        <div class= "recent-artist" id = "recent-artist"></div>
-        <div class="recent-last-scr" id = "recent-last-scr"></div>
-    </div>
-   
+    <div class = "recent-play-table">
+    <ol id = "recentlyPlayed" class="recentlyPlayed">
+        <li class = "recent-img" id = "recent-img"></li>
+        <li class = "recent-song" id = "recent-song"></li>
+        <li class= "recent-artist" id = "recent-artist"></li>
+        <li class="recent-last-scr" id = "recent-last-scr"></li>
+    </ol>
+</div>
 
 
 </body>
@@ -118,7 +119,8 @@ let data = fetch("../assets/js/recentSongs.json")
         var songContainer = document.getElementById("recent-song");
         var scrContainer = document.getElementById("recent-last-scr");
         var Images = new Array(data.length); 
-        var height = 100, width = 100;
+        var height = 85, width = 85;
+        
 
         for (var i =0; i < Images.length; i++) {
            Images[i] = new Image();
@@ -134,27 +136,27 @@ let data = fetch("../assets/js/recentSongs.json")
 
         for (var i =0; i < data.length; i++) {
            
-            var li = document.createElement("li");
-            li.innerHTML = data[i].Artist;
-            artistContainer.appendChild(li);
+            var ol = document.createElement("ol");
+            ol.innerHTML = data[i].Artist;
+            artistContainer.appendChild(ol);
            
             
         }
 
         for (var i =0; i < data.length; i++) {
            
-            var li = document.createElement("li");
-            li.innerHTML = data[i].Song;
-            songContainer.appendChild(li);
+            var ol = document.createElement("ol");
+            ol.innerHTML = data[i].Song;
+            songContainer.appendChild(ol);
            
             
         }
 
         for (var i =0; i < data.length; i++) {
            
-           var li = document.createElement("li");
-           li.innerHTML = data[i].lastScrobble;
-           scrContainer.appendChild(li);
+           var ol = document.createElement("ol");
+           ol.innerHTML = data[i].lastScrobble;
+           scrContainer.appendChild(ol);
           
            
        }
