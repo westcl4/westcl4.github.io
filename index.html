@@ -82,114 +82,120 @@
 
     <h1 class="top-tracks-title">Conor's Top Tracks</h1>
 
+    <!--<div class = recentPlayDiv>
+    <li id = "recentlyPlayedList" class="column">
+        <div class = "column" id = "recent-img"></div>
+        <div class = "row" id = "recent-song"></div>
+        <div class= "row" id = "recent-artist"></div>
+        <div class="row" id = "recent-last-scr"></div>
+    </li>
+</div> -->
 
-    <div id = "recentlyPlayed" class="column">
-        <li class = "column" id = "recent-img"></li>
-        <li class = "row" id = "recent-song"></li>
-        <li class= "row" id = "recent-artist"></li>
-        <li class="row" id = "recent-last-scr"></li>
+    <div id="recentPlaydiv">
+
     </div>
-
-
 
 </body>
 
 <script type="text/javascript">
 
-//This script fetches and populates the recent songs list
+    //This script fetches and populates the recent songs list
 
-let data = fetch("../assets/js/recentSongs.json")
-.then(function(response){
-    return response.json();
-})
-.then(function(data){
-    appendData(data);
-})
-.catch(function(err){
-    console.log('err: ' + err);
-});
-
-
-
-
-    function appendData(data){
-        
-        var imgContainer = document.getElementById("recent-img");
-        var artistContainer = document.getElementById("recent-artist");
-        var songContainer = document.getElementById("recent-song");
-        var scrContainer = document.getElementById("recent-last-scr");
-        var Images = new Array(data.length); 
-        var height = 85, width = 85;
-        
-
-        for (var i =0; i < Images.length; i++) {
-           Images[i] = new Image();
-           var img = document.createElement("img");
-           img.src = data[i].img;
-           img.height = height;
-           img.width = width;
-           imgContainer.appendChild(img);
-           
-          
-           
-       }
-
-        for (var i =0; i < data.length; i++) {
-           
-            var ol = document.createElement("ol");
-            ol.innerHTML = data[i].Artist;
-            artistContainer.appendChild(ol);
-           
-            
-        }
-
-        for (var i =0; i < data.length; i++) {
-           
-            var ol = document.createElement("ol");
-            ol.innerHTML = data[i].Song;
-            songContainer.appendChild(ol);
-           
-            
-        }
-
-        for (var i =0; i < data.length; i++) {
-           
-           var ol = document.createElement("ol");
-           ol.innerHTML = data[i].lastScrobble;
-           scrContainer.appendChild(ol);
-          
-           
-       }
-        
-    }
-
-
-
-
-/*fetch("../assets/js/recentSongs.json")
-.then(response => response.json())
-.then(data=> console.log(data))
-
-function recentSongsList(json) {
-    var songArray = JSON.parse(data);
+    /*let data = fetch("../assets/js/recentSongs.json")
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(data){
+        appendData(data);
+    })
+    .catch(function(err){
+        console.log('err: ' + err);
+    });
     
+    
+    
+    
+        function appendData(data){
+            
+            var imgContainer = document.getElementById("recent-img");
+            var artistContainer = document.getElementById("recent-artist");
+            var songContainer = document.getElementById("recent-song");
+            var scrContainer = document.getElementById("recent-last-scr");
+            var Images = new Array(data.length); 
+            var height = 85, width = 85;
+            
+    
+            for (var i =0; i < Images.length; i++) {
+               Images[i] = new Image();
+               var img = document.createElement("img");
+               img.src = data[i].img;
+               img.height = height;
+               img.width = width;
+               imgContainer.appendChild(img);
+               
+              
+               
+           }
+    
+            for (var i =0; i < data.length; i++) {
+               
+                var li = document.createElement("li");
+                li.innerHTML = data[i].Artist;
+                scrContainer.appendChild(li);
+               
+                
+            }
+    
+            for (var i =0; i < data.length; i++) {
+               
+                var li = document.createElement("li");
+                li.innerHTML = data[i].Song;
+                songContainer.appendChild(li);
+               
+                
+            }
+    
+            for (var i =0; i < data.length; i++) {
+               
+               var li = document.createElement("li");
+               li.innerHTML = data[i].lastScrobble;
+               scrContainer.appendChild(li);
+              
+               
+           }
+            
+        }*/
 
-    for (let i = 0; i < songArray.length; i++) {
-        var v = songArray[i];
-        var li = document.createElement("li");
-        li.appendChild(document.createTextNode(v.Artist));
-        ul.appendChild(li);
+
+
+    
+    let data = fetch("../assets/js/recentSongs.json")
+        .then(response => response.json())
         
+        .then(data => recentSongsList(data));
+        //.then(recentSongsList(data))    
+
+    function recentSongsList(songArray) {
+        //var songArray = JSON.parse(data);
+        //var myList = document.getElementById("recentPlaydiv");
+        var ulist = document.createElement("ul");
+        
+
+        for (let i = 0; i < songArray.length; i++) {
+            var v = songArray[i];
+            var li = document.createElement("li");
+            li.appendChild(document.createTextNode(v.Artist));
+            ulist.appendChild(li);
+            
+
+        }
+
+        var app = document.querySelector("#recentPlaydiv");
+        app.appendChild(ulist);
+
     }
 
-}
-
-li.innerHTML = data[i].Song;
-            songContainer.appendChild(li);
-            /*li.innerHTML = data[i].img;
-            mainContainer.appendChild(li);
-            li.innerHTML = data[i].lastScrobble;
-            mainContainer.appendChild(li); */
+    
 
 
 
