@@ -1,46 +1,42 @@
-{
-    "Artists": [
-        {
-            "Artist": "The Upbeats",
-            "img": "../assets/img/artists/the-upbeats.jpg",
-            "listens": "2340"
-        },
-        {
-            "Artist": "Netsky",
-            "img": "../assets/img/artists/netsky.jpg",
-            "listens": "2110"
-        },
-        {
-            "Artist": "Culture Shock",
-            "img": "../assets/img/artists/culture-shock.jpg",
-            "listens": "1740"
-        },
-        {
-            "Artist": "Hybrid Minds",
-            "img": "../assets/img/artists/hybrid-minds.jpg",
-            "listens": "1540"
-        },
-        {
-            "Artist": "Delta Heavy",
-            "img": "../assets/img/artists/delta-heavy.jpg",
-            "listens": "1520"
-        },
-        {
-            "Artist": "Wilkinson",
-            "img": "../assets/img/artists/wilkinson.jpg",
-            "listens": "1190"
-        },
-        {
-            "Artist": "Fred V and Grafix",
-            "img": "../assets/img/artists/fred-v-grafix.jpg",
-            "listens": "980"
-        },
-        {
-            "Artist": "Dimension",
-            "img": "../assets/img/artists/dimension.jpg",
-            "listens": "920"
-        }
-    ]
-}
-   
-   
+[
+    {
+        "Artist": "The Upbeats",
+        "img": "../assets/img/artists/the-upbeats.jpg",
+        "listens": "2340"
+    },
+    {
+        "Artist": "Netsky",
+        "img": "../assets/img/artists/netsky.jpg",
+        "listens": "2110"
+    },
+    {
+        "Artist": "Culture Shock",
+        "img": "../assets/img/artists/culture-shock.jpg",
+        "listens": "1740"
+    },
+    {
+        "Artist": "Hybrid Minds",
+        "img": "../assets/img/artists/hybrid-minds.jpg",
+        "listens": "1540"
+    },
+    {
+        "Artist": "Delta Heavy",
+        "img": "../assets/img/artists/delta-heavy.jpg",
+        "listens": "1520"
+    },
+    {
+        "Artist": "Wilkinson",
+        "img": "../assets/img/artists/wilkinson.jpg",
+        "listens": "1190"
+    },
+    {
+        "Artist": "Fred V and Grafix",
+        "img": "../assets/img/artists/fred-v-grafix.jpg",
+        "listens": "980"
+    },
+    {
+        "Artist": "Dimension",
+        "img": "../assets/img/artists/dimension.jpg",
+        "listens": "920"
+    }
+]

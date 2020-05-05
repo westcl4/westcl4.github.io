@@ -100,6 +100,10 @@
 
     <div id= "topArtistDiv"></div>
 
+    <h1 class="top-tracks-title">Conor's Top 10</h1>
+
+    <div id= "top10Songs"></div>
+
 </body>
 
 <script type="text/javascript">
@@ -157,7 +161,110 @@
     }
 
 
+    let Artistdata = fetch("../assets/js/artists.json")
+        .then(response => response.json())
 
+        .then(Artistdata => artistsList(Artistdata))
+
+        ;
+
+    function artistsList(artistArray) {
+     
+        var ulist = document.createElement("ul");
+        ulist.className = "containerTopArtist";
+
+        for (let i = 0; i < artistArray.length; i++) {
+
+            console.log("hello");
+
+            var v = artistArray[i];
+
+            var li = document.createElement("li");
+            li.className = "flex-item";
+            
+            var divArtist = document.createElement("div");
+            divArtist.className = "recentListElement";
+            var divListens = document.createElement("div");
+            divListens.className = "recentListElement";
+
+
+            var img = document.createElement("img");
+            img.src = v.img;
+            img.height = 85;
+            img.width = 85;
+            li.appendChild(img);
+
+            divArtist.innerHTML = v.Artist;
+            li.appendChild(divArtist);
+
+            divListens.innerHTML = v.listens;
+            li.appendChild(divListens);
+
+            ulist.appendChild(li);
+
+
+
+        }
+
+        
+
+        var app = document.querySelector("#topArtistDiv");
+        app.appendChild(ulist);
+
+    }
+    let topData = fetch("../assets/js/topSongs.json")
+        .then(response => response.json())
+
+        .then(topData => topSongsList(topData));
+    //.then(recentSongsList(data))    
+
+    function topSongsList(songArray) {
+        //var songArray = JSON.parse(data);
+        //var myList = document.getElementById("recentPlaydiv");
+        var ulist = document.createElement("ul");
+
+
+        for (let i = 0; i < songArray.length; i++) {
+            var v = songArray[i];
+
+            var li = document.createElement("li");
+            li.className = "recentListRow";
+            var divSong = document.createElement("div");
+            divSong.className = "recentListElement";
+            var divArtist = document.createElement("div");
+            divArtist.className = "recentListElement";
+            var divScrs = document.createElement("div");
+            divScrs.className = "barchart";
+            divScrs.style.width = (v.Scrobbles / 1600 * 100) + "%";
+
+
+            var img = document.createElement("img");
+            img.src = v.img;
+            img.height = 85;
+            img.width = 85;
+            li.appendChild(img);
+
+            divArtist.innerHTML = v.Artist;
+            li.appendChild(divArtist);
+
+            divSong.innerHTML = v.Song;
+            li.appendChild(divSong);
+
+            
+
+            divScrs.innerHTML = v.Scrobbles;
+            li.appendChild(divScrs);
+
+            ulist.appendChild(li);
+
+
+
+        }
+
+        var app = document.querySelector("#top10Songs");
+        app.appendChild(ulist);
+
+    }
 
 
 

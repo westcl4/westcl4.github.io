@@ -3,7 +3,10 @@ body
     background-color: slategray;
     background-image: url("assets/img/header.jpg");
     color: white;
+    margin-left: 10%;
+    margin-right: 10%;
 }
+
 
 
 .avatar 
@@ -18,6 +21,20 @@ body
     float: left;
 }
 
+.countryFlag
+{
+    width: 35px;
+}
+
+.profileBar
+{
+    background-color: rgb(31, 34, 36);
+    width: 25%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
 .bannerimage
 {
     background-image:url("../img/header.jpg");
@@ -27,6 +44,7 @@ body
     width: 100%;
     background-size: cover;
     position: relative;
+    
 }
 
 .recentListRow
@@ -41,6 +59,7 @@ padding: 20px;
 {
     padding: 25px;
     min-width: 100px;
+    height: 20px;
 }
 
 .containerTopArtist
@@ -50,22 +69,28 @@ padding: 20px;
     justify-content: space-around;
 }
 
-
-.countryFlag
+.flex-item 
 {
-    width: 35px;
-}
+    background: tomato;
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 20;
+    text-align: center;
+  }
 
-.profileBar
-{
-    background-color: rgb(31, 34, 36);
-    width: 25%;
-    position: absolute;
-    bottom: 0%;
-    left: 0%;
-}
  .top-tracks-title 
  {
     text-align: center;
     color: white;
+ }
+
+ .barchart
+ {
+     background-color: blue;
+     max-width: 500px;
  }
