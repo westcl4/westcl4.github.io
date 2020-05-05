@@ -91,8 +91,9 @@
     </li>
 </div> -->
 
-    <div id="recentPlaydiv">
 
+    <div id="recentPlaydiv">
+        
     </div>
 
 </body>
@@ -183,9 +184,23 @@
 
         for (let i = 0; i < songArray.length; i++) {
             var v = songArray[i];
+            
             var li = document.createElement("li");
-            li.appendChild(document.createTextNode(v.Artist));
+            var divSong = document.createElement("div");
+            var divArtist = document.createElement("div");
+            var divLastScr = document.createElement("div");
+
+            divSong.innerHTML = v.Song;
+            li.appendChild(divSong);
+
+            divArtist.innerHTML = v.Artist;
+            li.appendChild(divArtist);
+
+            divLastScr.innerHTML = v.lastScrobble;
+            li.appendChild(divLastScr);
+
             ulist.appendChild(li);
+
             
 
         }
