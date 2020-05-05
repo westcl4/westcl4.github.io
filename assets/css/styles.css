@@ -29,7 +29,26 @@ body
     position: relative;
 }
 
+.recentListRow
+{
+height: 40px;
+width: 80%;
+margin: 20px;
+padding: 20px;
+}
 
+.recentListElement
+{
+    padding: 25px;
+    min-width: 100px;
+}
+
+.containerTopArtist
+{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
 
 
 .countryFlag
