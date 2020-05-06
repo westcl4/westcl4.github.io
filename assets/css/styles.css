@@ -45,14 +45,16 @@ body
     background-size: cover;
     position: relative;
     
+    
 }
 
 .recentListRow
 {
-height: 40px;
+height: 80px;
 width: 80%;
 margin: 20px;
-padding: 20px;
+padding: 50px;
+background-color: black;
 }
 
 .recentListElement
@@ -60,6 +62,11 @@ padding: 20px;
     padding: 25px;
     min-width: 140px;
     height: 20px;
+}
+
+.recentListImg
+{
+    align-self: center;
 }
 
 .containerTopArtist
@@ -91,6 +98,6 @@ padding: 20px;
 
  .barchart
  {
-     background-color: blue;
+     background-color: gray;
      max-width: 500px;
  }
