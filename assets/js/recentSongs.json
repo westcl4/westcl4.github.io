@@ -3,60 +3,60 @@
         "Artist": "Dimension",
         "Song": "Devotion",
         "img": "../assets/img/artists/dimension.jpg",
-        "lastScrobble": "Listening now"
+        "lastScrobble": "Scrobbling now"
     },
     {
         "Artist": "Dimension",
         "Song": "If You Want To",
         "img": "../assets/img/artists/dimension.jpg",
-        "lastScrobble": "5 minutes ago"
+        "lastScrobble": "Scrobbled 5 minutes ago"
     },
     {
         "Artist": "Netsky",
         "Song": "Everyday",
         "img": "../assets/img/artists/netsky.jpg",
-        "lastScrobble": "8 minutes ago"
+        "lastScrobble": "Scrobbled 8 minutes ago"
     },
     {
         "Artist": "Culture Shock",
         "Song": "Panic Room",
         "img": "../assets/img/artists/culture-shock.jpg",
-        "lastScrobble": "23 minutes ago"
+        "lastScrobble": "Scrobbled 23 minutes ago"
     },
     {
         "Artist": "Fred V and Grafix",
         "Song": "Ultraviolet",
         "img": "../assets/img/artists/fred-v-grafix.jpg",
-        "lastScrobble": "28 minutes ago"
+        "lastScrobble": "Scrobbled 28 minutes ago"
     },
     {
         "Artist": "Hybrid Minds",
         "Song": "Touch",
         "img": "../assets/img/artists/hybrid-minds.jpg",
-        "lastScrobble": "33 minutes ago"
+        "lastScrobble": "Scrobbled 33 minutes ago"
     },
     {
         "Artist": "Hybrid Minds",
         "Song": "Phoenix",
         "img": "../assets/img/artists/hybrid-minds.jpg",
-        "lastScrobble": "36 minutes ago"
+        "lastScrobble": "Scrobbled 36 minutes ago"
     },
     {
         "Artist": "The Upbeats",
         "Song": "Uncharted",
         "img": "../assets/img/artists/the-upbeats.jpg",
-        "lastScrobble": "One hour ago"
+        "lastScrobble": "Scrobbled One hour ago"
     },
     {
         "Artist": "Delta Heavy",
         "Song": "White Flag",
         "img": "../assets/img/artists/delta-heavy.jpg",
-        "lastScrobble": "One hour ago"
+        "lastScrobble": "Scrobbled One hour ago"
     },
     {
         "Artist": "Delta Heavy",
         "Song": "Kaliedoscope",
         "img": "../assets/img/artists/delta-heavy.jpg",
-        "lastScrobble": "One hour ago"
+        "lastScrobble": "Scrobbled One hour ago"
     }
 ]

@@ -82,14 +82,7 @@
 
     <h1 class="top-tracks-title">Conor's Top Tracks</h1>
 
-    <!--<div class = recentPlayDiv>
-    <li id = "recentlyPlayedList" class="column">
-        <div class = "column" id = "recent-img"></div>
-        <div class = "row" id = "recent-song"></div>
-        <div class= "row" id = "recent-artist"></div>
-        <div class="row" id = "recent-last-scr"></div>
-    </li>
-</div> -->
+    
 
 
     <div id="recentPlaydiv">
@@ -100,7 +93,7 @@
 
     <div id= "topArtistDiv"></div>
 
-    <h1 class="top-tracks-title">Conor's Top 10</h1>
+    <h1 class="top-tracks-title">Conor's Top 10 Most Scrobbled</h1>
 
     <div id= "top10Songs"></div>
 
@@ -148,6 +141,7 @@
             li.appendChild(divArtist);
 
             divLastScr.innerHTML = v.lastScrobble;
+            divLastScr.style = "align-right";
             li.appendChild(divLastScr);
 
             ulist.appendChild(li);
@@ -184,15 +178,16 @@
             li.className = "flex-item";
             
             var divArtist = document.createElement("div");
-            divArtist.className = "recentListElement";
+            divArtist.className = "flex-text";
             var divListens = document.createElement("div");
-            divListens.className = "recentListElement";
+            divListens.className = "flex-text";
 
 
             var img = document.createElement("img");
+            img.className = "flex-img";
             img.src = v.img;
-            img.height = 85;
-            img.width = 85;
+            img.height = 130;
+            img.width = 130;
             li.appendChild(img);
 
             divArtist.innerHTML = v.Artist;
